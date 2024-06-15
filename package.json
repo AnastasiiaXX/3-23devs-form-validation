@@ -1,0 +1,15 @@
+{
+  "name": "3-23devs-form-validation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "on-change": "^5.0.1",
+    "yup": "^1.4.0"
+  }
+}

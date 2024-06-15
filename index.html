@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-8 col-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Регистрация</h5>
+            <div data-container="sign-up">
+              <form data-form="sign-up" method="post">
+                <div class="form-group">
+                  <label for="first-name">Имя</label>
+                  <input id="first-name" required type="text" class="form-control" name="first-name">
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Фамилия</label>
+                  <input id="last-name" required type="text" class="form-control" name="last-name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email<sup>*</sup></label>
+                  <input id="email" required type="email" class="form-control" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="password">Пароль<sup>*</sup></label>
+                  <input id="password" required type="password" class="form-control" name="password">
+                </div>
+                <div class="form-group">
+                  <label for="password-confirm">Подтверждение пароля<sup>*</sup></label>
+                  <input id="password-confirm" required type="password" class="form-control"
+                    name="passwordConfirmation">
+                </div>
+                <div class="form-group">
+                  <label for="birth-day">Дата рождения</label>
+                  <input id="birth-day"  required type="date" class="form-control" name="birthday">
+                </div>
+                <input id ="form-button" type="submit" class="btn btn-primary" value="Отправить" disabled>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/yup@0.32.9/dist/yup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/on-change@2.1.1/on-change.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
