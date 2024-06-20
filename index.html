@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <div class="container mt-5">
     <div class="row">
@@ -19,28 +19,33 @@
               <form data-form="sign-up" method="post">
                 <div class="form-group">
                   <label for="first-name">Имя</label>
-                  <input id="first-name" required type="text" class="form-control" name="first-name">
+                  <input id="first-name" required type="text" class="form-control" name="first-name" placeholder="Не более 20 символов">
+                  <span id="first-name-error" class="error-message"></span>
                 </div>
                 <div class="form-group">
                   <label for="last-name">Фамилия</label>
-                  <input id="last-name" required type="text" class="form-control" name="last-name">
+                  <input id="last-name" required type="text" class="form-control" name="last-name" placeholder="Не более 50 символов">
+                  <span id="last-name-error" class="error-message"></span>
                 </div>
                 <div class="form-group">
-                  <label for="email">Email<sup>*</sup></label>
-                  <input id="email" required type="email" class="form-control" name="email">
+                  <label for="email">Email</label>
+                  <input id="email" required type="email" class="form-control" name="email" placeholder="example@email.com">
+                  <span id="email-error" class="error-message"></span>
                 </div>
                 <div class="form-group">
-                  <label for="password">Пароль<sup>*</sup></label>
-                  <input id="password" required type="password" class="form-control" name="password">
+                  <label for="password">Пароль</label>
+                  <input id="password" required type="password" class="form-control" name="password" placeholder="Не менее 8 символов">
                 </div>
                 <div class="form-group">
-                  <label for="password-confirm">Подтверждение пароля<sup>*</sup></label>
+                  <label for="password-confirm">Подтверждение пароля</label>
                   <input id="password-confirm" required type="password" class="form-control"
                     name="passwordConfirmation">
+                    <span id="password-confirm-error" class="error-message"></span>
                 </div>
                 <div class="form-group">
                   <label for="birth-day">Дата рождения</label>
                   <input id="birth-day"  required type="date" class="form-control" name="birthday">
+                  <span id="birth-day-error" class="error-message"></span>
                 </div>
                 <input id ="form-button" type="submit" class="btn btn-primary" value="Отправить" disabled>
               </form>
@@ -50,9 +55,7 @@
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/yup@0.32.9/dist/yup.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/on-change@2.1.1/on-change.min.js"></script>
-  <script src="app.js"></script>
+  <script type="module" src="./index.js"></script>
 </body>
 
 </html>

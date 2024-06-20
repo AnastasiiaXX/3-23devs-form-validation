@@ -1,0 +1,20 @@
+.invalid-feedback {
+  color: red;
+}
+
+.is-invalid {
+  border: 1px solid red;
+}
+
+.is-valid {
+  border: 1px solid green;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+}

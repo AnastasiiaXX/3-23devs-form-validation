@@ -1,15 +1,14 @@
 {
   "name": "3-23devs-form-validation",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "description": "Registration form with a dynamic validation",
+  "main": "index.js",
+  "type": "module",
+  "author": "AK",
   "license": "ISC",
-  "dependencies": {
-    "on-change": "^5.0.1",
-    "yup": "^1.4.0"
-  }
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "eslint": "^9.5.0",
+    "globals": "^15.6.0"
+  } 
 }
